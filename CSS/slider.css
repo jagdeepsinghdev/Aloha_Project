@@ -1,0 +1,22 @@
+/* * ----------------------------------------carousel------------------------------------------ */ */
+.items {
+    position: relative;
+   display: inline-block;
+    height: 400px;
+    width: 100%;
+   
+}
+.items li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    
+}
+.items li img {
+    height: 200px;
+    width: 200px;
+}
+.items li h1 {
+    color: red ;
+    font-size: 20px;
+}

@@ -1,0 +1,85 @@
+/* -------------------------------------HERO_AREA------------------------------------------ */
+.banner {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)) ,url("../images/banner-girl.png"),url("../images/flower-bkgd.jpg");
+    text-align: center;
+    background-repeat: no-repeat ,no-repeat ,repeat;
+    background-size: contain;
+    background-position-y: 0px ,60px;
+    background-position-x: center , center;
+   
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.new_collection_text {
+    
+    position: absolute;
+    height: 40px;
+    width: 166px;
+    top: 42%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -83px;
+    
+    line-height: 40px;
+     font-size: 17px;
+     text-transform: uppercase;
+}
+
+.Spring_summer_head {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    font-size: 26px;
+    margin-top: 170px;
+    width: 200px;
+    text-align: center;
+    margin-left: -100px;
+
+}
+/* ------------------------------Mobile */
+
+@media screen and (max-width:640px) {
+    .banner {
+        height: 370px;
+        background-repeat: no-repeat ,no-repeat ,no-repeat;
+        background-size: contain ,contain ,cover;
+        background-size: contain ,contain ,cover;
+
+        background-position-y: 0px ,37px,center;
+        
+        background-position-x: 0px ,center,center;
+    }
+    .new_collection_text{
+        top: 35%;
+        font-size: 16px;
+      
+    }
+    .Spring_summer_head {
+       font-size: 25px;
+       top: -10px;
+       
+    }
+}
+@media screen and (max-width:1240px) {
+   
+    .new_collection_text {
+
+        top: 37%;
+        font-size: 20px;
+        width: 250px;
+        margin-left: -125px;
+    
+    }
+    .Spring_summer_head {
+
+        font-size: 45px;
+        font-weight: normal;
+        width: 500px;
+        margin-left: -250px;
+        margin-top: 178px;
+    
+    }
+}

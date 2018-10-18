@@ -1,0 +1,170 @@
+
+/* ---------------------------------CATEGORIES----------------------------------------------- */
+.categories {
+    display: flex; 
+   flex-direction: column;
+    
+   height: 631px;
+   font-size: 34px; 
+   text-transform: uppercase;
+   font-weight: normal;
+}
+.flex_Row1 , .flex_Row2 {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; 
+}
+.men , .trends , .glasses,.sale , .bags , .womens {
+    
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+}
+
+.flex_Row1{
+    border-bottom: 3px solid transparent;
+}
+.flex_Row2 {
+    border-top: 3px solid white;
+   
+}
+.men {
+    flex-basis: 50.5%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/mens-category.jpg") ;
+    background-size: contain ,cover;
+    background-position: center;
+    border-right: 3px solid white;
+    
+}
+.trends {
+    flex-basis: 25%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/trends-category.jpg") ;
+   
+    background-size: contain ,cover;
+    background-position: center;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+ 
+}
+.glasses {
+    flex-basis: 25%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/glasses-category.jpg") ;
+    background-size: contain ,cover;
+    background-position: center;
+    border-left: 3px solid white;
+}
+.sale {
+    flex-basis: 25%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/sale-category.jpg") ;
+    background-size: contain ,cover;
+    background-position: center;
+    border-right: 3px solid white;
+}
+.bags {
+    flex-basis: 25%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/bags-category.jpg") ;
+    background-size: contain ,cover;
+    background-position: center;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+.womens {
+    flex-basis: 50.5%;
+    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/womens-category.jpg") ;
+    background-size: contain ,cover;
+    background-position: center;
+    border-left: 3px solid white;
+}
+@media screen and (max-width:640px) {
+   
+    .categories {
+        height: 686px;
+        font-size: 22px;
+    }
+    .flex_Row1 , .flex_Row2 {
+        
+        flex-direction: row;
+         flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .men {
+       flex-basis: 100%;
+     
+       border-bottom: 3px solid white;
+    border-right: none;
+    }
+    .trends {
+        flex-basis: 49.5%;
+        border-left: none;
+        border-top: 3px solid white;
+        border-right: none;
+        
+    }
+    .glasses {
+        flex-basis: 49.5%; 
+        border-left: none;
+        border-top: 3px solid white;
+    }
+    .sale {
+        flex-basis: 49.5%; 
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+    .bags {
+        flex-basis: 49.5%; 
+        border-right: none;
+        border-left: none;
+        border-bottom: 3px solid white;
+    }
+    .womens {
+        flex-basis: 100%;
+      
+        border-top: 3px solid white;
+        
+        border-left: none;
+       
+        
+    }
+}
+@media screen and (max-width:1240px) {
+    .categories {
+        height: 311px;
+    }
+    .flex_Row1 , .flex_Row2 {
+        
+        flex-direction: row;
+         flex-wrap: wrap;
+      
+    }
+    .men {
+        flex-basis: 49.5%;
+        border-right: 3px solid white;
+        
+    }
+    .trends {
+        flex-basis: 24.5%;
+        border-top: none;
+        }
+    .glasses {
+        flex-basis: 24.5%;
+        border-top: none;
+         border-left: 3px solid white;
+    }
+    .sale {
+        flex-basis: 24.5%;
+        border-right: 3px solid white;
+    }
+    .bags {
+        flex-basis: 24.5%;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+    }
+    .womens {
+        flex-basis: 49.5%;
+        border-top: none;
+       
+    }
+}

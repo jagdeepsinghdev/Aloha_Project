@@ -1,0 +1,153 @@
+/* ------------------------------------------FOOTER---------------------------------------- */
+footer {
+    display: flex; 
+    flex-flow:wrap;
+    height: 250px; 
+   justify-content:space-between;
+   background: rgb(39, 38, 38);
+   align-items: center;
+  
+}
+/* Address flex */
+.address {
+   
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color: transparent;
+    position:relative;
+
+}
+.copyright  {
+    position: absoulte;
+
+    padding-left: 40px;
+   
+    display: block;
+}
+
+.addressPara {
+   color: gray; 
+   padding-top: 20px;
+   padding-left: 40px;
+}
+/* Social_links */
+.social_links {
+    display: flex;
+    background-color: transparent;
+    flex-basis: 20%;
+    font-size: 16px;
+  
+}
+
+.social_links  ul {
+   
+    list-style: none;
+
+}
+.social_links li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+   /* line-height: 30px; */
+   color: white;
+   padding: 6px 25px;
+}
+.social_links li a:hover {
+    color:lightgrey;
+}
+.social_links li a {
+    display: flex;
+    justify-content: start;
+}
+.social_icons {
+    flex: 0 0 28px;
+    
+
+}
+.social_text {
+    
+    flex: 0 0 30px;
+}
+
+/* ------------------------------Mobile */
+
+@media screen and (max-width:640px) {
+    footer { 
+
+        flex-flow:wrap;
+        
+        text-align: center;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+     
+    }
+   .address {
+    text-align: center;
+    font-size: 14px;
+    flex-basis: 100%;
+   }
+   .copyright , .addressPara {
+       padding-left: 0px;
+   }
+   .copyright {
+       padding-top: 20px;
+   }
+  .social_links {
+    display: flex;
+    flex-flow: row;
+    flex-basis: 100%;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+  }
+  .social_links ul  {
+    display: flex;
+    
+}
+.social_text {
+    font-size: 0px;
+}
+.social_links ul a {
+    padding: 0px 10px;
+}
+}
+@media screen and (max-width:1240px) {
+    footer {
+        flex-direction: column;
+        font-size: 16px;
+        height: 240px;
+    }
+    .address {
+        justify-content: center;
+        
+    }
+    .copyright {
+        padding-top: 0px;
+    }
+    .social_links {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social_links  ul {
+        flex-direction: column;
+        list-style: none;
+    
+    }
+    .social_links li a {
+       
+        padding: 6px 28px;
+    }
+    .social_links li a:hover {
+        color:lightgrey;
+    }
+   
+    
+    .social_text {
+        font-size: 16px;
+        
+    }
+}
