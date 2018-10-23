@@ -1,5 +1,5 @@
 /* --------------------------------------BRAND_INFO------------------------------------------ */
-
+/* 
 .brandinfo {
    
     position: relative;
@@ -33,19 +33,55 @@ font-style: italic;
     color:black;
     margin-left: -225px;
     font-weight: 300;
+} */
+
+
+.brandinfo {
+   
+    position: relative;
+    height: 220px;
+    width: 100%;
+    text-align: center;
 }
 
+.brandinfotext1 h1 {
+    position: absolute;
+    width: 321px;
+   font-size: 26px;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -160px;
+    color: black;
+    display: block;
+   
+}
+
+.brandinfotext1 span {
+font-style: italic;
+}
+.brandinfoPara p {
+    position: absolute;
+    line-height: 25px;
+   
+    width: 92%;
+    margin-top: 100px;
+    left: 50%;
+    color: black;
+    margin-left: -46%;
+    font-weight: 300;
+}
 /* ------------------------------Mobile */
 
-@media screen and (max-width:640px) {
+@media screen and (min-width:1240px) {
     
     
     .brandinfoPara p {
-        width: 321px;
-        margin-left: -160px;
+        width: 550px;
+        margin-left: -275px;
     }
 }
-@media screen and (max-width:1240px) {
+
+@media screen and (min-width:600px) and (max-width:1240px) {
     .brandinfotext1 h1{
         width: 300px;
         font-size: 30px;
@@ -55,4 +91,4 @@ font-style: italic;
         width: 464px;
         margin-left: -232px;
     }
-}
+} 

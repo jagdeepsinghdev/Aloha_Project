@@ -1,4 +1,6 @@
 /* ----------------------------------------SUBSCRIBE_SECTION--------------------------------- */
+
+
 .subscribe {
     display: block;
     position: relative;
@@ -13,13 +15,12 @@
 }
 .subscribe h1{
    
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
-    width: 574px;
-    text-align: center;
+    width: 97%;
     left: 50%;
+    margin-left: -48%; 
     margin-top: 70px;
-    margin-left: -287px;
     position: absolute;
 
 }
@@ -27,17 +28,16 @@
     font-style: italic;
 }
 .subscribe p {
-    font-size: 18px;
-    padding: -3px;
-    width: 574px;
-    text-align: center;
+
+    width: 96%;
     left: 50%;
-    margin-top: 137px;
-    margin-left: -287px;
+    margin-top: 133px;
+    line-height: 20px;
+    
     position: absolute;
     font-family: 'Raleway';
     font-weight: lighter;
-   
+    margin-left: -48%;
 }
 form {
     width: 100%;
@@ -49,13 +49,13 @@ form {
  form input {
     margin-top: 222px;
     border: none;
-    width: 400px;
     height: 40px;
-   
     border-radius: 20px;
     left: 50%;
-    margin-left: -200px;
     position: absolute;
+    width: 280px;
+    margin-left: -150px;
+    
 }
 form input[type="email"] {
     padding-left: 20px;
@@ -65,31 +65,35 @@ form input[type="email"] {
 button{
     height: 36px;
     background-color: brown;
-    width: 120px;
+    
     color: white;
     border-radius: 18px;
     left: 50%;
     position: absolute;
     bottom: 40px;
     border: none;
-    margin-left: 96px;
-    font-size: 16px;
+    width: 99px;
+    margin-left: 48px;
+    font-size: 14px;
 }
+
+
+
 
 /* ------------------------------Mobile */
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     
 .subscribe h1 {
 font-size: 32px;
 font-weight: 900;
 width: 97%;
 /* text-align: center; */
-left: 50%;
-margin-top: 70px;
-margin-left: -48%;
+/* left: 50%; */
+/* margin-top: 70px;
+margin-left: -48%; */
 /* position: absolute; */
-}
+/* } 
 
 .subscribe p {
     
@@ -113,7 +117,8 @@ button {
     font-size: 14px;
 }
 }
-@media screen and (max-width:1240px) {
+*/
+@media screen and (min-width:1240px) {
 .subscribe {
     height: 350px;
 }
@@ -140,4 +145,4 @@ button {
     
     font-size: 16px;
 }
-}
+} 

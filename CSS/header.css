@@ -2,7 +2,7 @@
 header {
    
     display: flex;
-    height: 70px;
+    height: 110px;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -10,9 +10,13 @@ header {
  } 
  /* LOGO */
 .logo {
-   display: flex;
-    margin-left: 30px;
+    
+    display: flex;
     height: 70px;  
+    flex-basis: 40%;
+    margin-left: 10px;
+
+    
    
 }
 .logo img {   
@@ -22,6 +26,86 @@ header {
 
 /* NAV_BAR */
 .nav {
+display: flex;
+
+flex-basis: 100%;
+height: 40px;
+order: 3;
+border-top: 1px solid lightgrey;
+justify-content: center;
+margin: 0px 10px;
+} 
+.nav ul {
+    display: inline-block; 
+    padding: 0px;
+    margin: 0px;
+}
+.nav li {
+    list-style-type: none;
+    padding: 0px;
+   
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Raleway';  
+    font-size: 14px;
+        margin-top: 0px;
+}
+.nav li a {
+   
+    list-style: none;
+    
+    color: red;
+    text-decoration: none;
+    right: 0px;
+    margin: 0 auto;
+    line-height: 40px;
+    padding: 0px 7px;
+  
+}
+
+/* CART */
+.cart {
+    display: flex;
+   
+    height: 70px;
+    flex-basis: 11%;
+   
+   padding-top: 10px;
+   margin-right: 11px;
+    align-items: center;
+ padding-top: 0px;
+    
+}
+.cart a img {
+    display: flex;
+
+  height: 50px;
+  width: 50px;  
+}
+/* header {
+   
+    display: flex;
+    height: 110px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+
+ } 
+ /* LOGO */
+/* .logo {
+   display: flex;
+    margin-left: 30px;
+    height: 70px;  
+   
+}
+.logo img {   
+    height: 70px;
+    width: 120px; 
+}  */
+
+/* NAV_BAR */
+/* .nav {
 display: flex;
 height: 70px;
 } 
@@ -49,9 +133,10 @@ height: 70px;
     right: 0px;
     margin: 0 auto;
   
-}
+} */
 
 /* CART */
+/*
 .cart {
     display: flex;
    
@@ -66,8 +151,8 @@ height: 70px;
 
   height: 50px;
   width: 50px;  
-}
-@media screen and (max-width:600px) {
+} */
+/* @media screen and (max-width:600px) {
     header {
         height: 110px;
     }
@@ -99,31 +184,33 @@ height: 70px;
         padding: 0px 7px;
        
     }
-}
-@media screen and (max-width:1240px) {
+} */
+@media screen and (min-width:600px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        height: 70px;
     }
     .logo {
-        flex-basis: 20%;
-        margin-left: 15px;
+        flex-basis: 14%;
     }
     .logo img {
         width: 100px;
     }
     .nav {
-        flex-basis: 60%;
+        flex-basis: 58%;
+        height: 70px;
+        line-height: 70px;
     }
     .nav li a {
         padding: 0px 10px;
     }
     .cart {
 
-        flex-basis: 11%;
-        margin-right: 0px;
-        padding-top: 0px;
-        align-items: center;
+        flex-basis: 12%;
+        margin-right: 10px;
+        justify-content: right;
+        order: 3;
     
     }
-}
+} 

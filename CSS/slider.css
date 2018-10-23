@@ -4,19 +4,45 @@
    display: inline-block;
     height: 400px;
     width: 100%;
+    color: black;
    
+}
+.items h1 {
+    
+
+        line-height: 40px;
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    
+    
+}
+.items p {
+    color: gray;
+    
+}
+
+.items span {
+    font-style: italic;
+}
+.items ul {
+    text-align: center;
 }
 .items li {
     display: inline-block;
     text-align: center;
     list-style: none;
+    height: 250px;
+    
     
 }
+
 .items li img {
     height: 200px;
     width: 200px;
 }
 .items li h1 {
     color: red ;
-    font-size: 20px;
+    font-size: 16px;
 }
