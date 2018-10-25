@@ -1,86 +1,18 @@
 /* ------------------------------------------FOOTER---------------------------------------- */
-/* footer {
-    display: flex; 
-    flex-flow:wrap;
-    height: 250px; 
-   justify-content:space-between;
-   background: rgb(39, 38, 38);
-   align-items: center;
-  
-}
 
-.address {
-   
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-    background-color: transparent;
-    position:relative;
-
-}
-.copyright  {
-    position: absoulte;
-
-    padding-left: 40px;
-   
-    display: block;
-}
-
-.addressPara {
-   color: gray; 
-   padding-top: 20px;
-   padding-left: 40px;
-}
-
-.social_links {
-    display: flex;
-    background-color: transparent;
-    flex-basis: 20%;
-    font-size: 16px;
-  
-}
-
-.social_links  ul {
-   
-    list-style: none;
-
-}
-.social_links li a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-   
-   color: white;
-   padding: 6px 25px;
-}
-.social_links li a:hover {
-    color:lightgrey;
-}
-.social_links li a {
-    display: flex;
-    justify-content: start;
-}
-.social_icons {
-    flex: 0 0 28px;
-    
-
-}
-.social_text {
-    
-    flex: 0 0 30px;
-} */
 
 footer {
     display: flex; 
    
     height: 250px; 
     justify-content:space-between;
-    background: rgb(39, 38, 38);
+    background: #242424;
     flex-flow:wrap;
     text-align: center;
     align-items: center;
     height: 250px;
     width: 100%;
+    font-weight: 600;
   
 }
 
@@ -102,15 +34,13 @@ footer {
 }
 .copyright {
     padding-top: 20px;
-
     position: absoulte;
-
-
-   
     display: block;
 }
-
-.addressPara {
+.copyright a {
+    color: white;  
+}
+.addressPara  {
    color: gray; 
    padding-top: 20px;
  

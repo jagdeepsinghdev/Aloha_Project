@@ -1,39 +1,5 @@
 /* --------------------------------------BRAND_INFO------------------------------------------ */
-/* 
-.brandinfo {
-   
-    position: relative;
-    height: 220px;
-    width: 100%;
 
-}
-
-.brandinfotext1 h1 {
-    position: absolute;
-    width: 250px;
-   font-size: 26px;
-    left: 50%;
-    margin-top: 40px;
-    margin-left: -125px;
-    color: black;
-    display: block;
-}
-
-.brandinfotext1 span {
-font-style: italic;
-}
-.brandinfoPara p {
-    position: absolute;
-    height: 100px;
-    line-height: 25px;
-    text-align: center;
-    width: 450px;  
-    margin-top: 100px;
-    left: 50%;
-    color:black;
-    margin-left: -225px;
-    font-weight: 300;
-} */
 
 
 .brandinfo {
@@ -51,14 +17,12 @@ font-style: italic;
     left: 50%;
     margin-top: 40px;
     margin-left: -160px;
-    color: black;
+    color: #2d2d2d;
     display: block;
    
 }
 
-.brandinfotext1 span {
-font-style: italic;
-}
+
 .brandinfoPara p {
     position: absolute;
     line-height: 25px;
@@ -66,7 +30,7 @@ font-style: italic;
     width: 92%;
     margin-top: 100px;
     left: 50%;
-    color: black;
+    color: #2d2d2d;
     margin-left: -46%;
     font-weight: 300;
 }

@@ -14,3 +14,20 @@ console.log("Just Checking");
 //   $("$list").append(newValue);
 //     });
 //   });
+
+$(document).ready(function(){
+  
+    var interval = window.setInterval(rotateSlides, 3000)
+    
+    function rotateSlides(){
+        $("#carousel ul").animate({marginLeft:-480},1000,function(){
+			$(this).find("li:last").after($(this).find("li:first"));
+			$(this).css({marginLeft:0});
+		})
+      }
+    })
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });

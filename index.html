@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="CSS/slider.css">
     <link rel="stylesheet" href="CSS/subscribe.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/flickity.min.css">
 
 
 
@@ -57,10 +58,12 @@
     </section>
 
     <section class="brandinfo">
-        <div class="brandinfotext1">
-            <h1 class="brandinfotext1"><span>Hand-Crafed</span> Styles</h1>
-        </div>
 
+        <!-- styling for this header is done in Items Section -->
+        <div class="brandinfotext1">
+           <h1> <span class="headerTextItalics">Hand-Craft</span> <span class="headerTextBold">Styles</span></h1>
+        </div>
+                    <!-- ----------------xx----------- -->
         <div class="brandinfoPara">
             <p>Aloha Apparel Co. sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
         </div>
@@ -72,72 +75,78 @@
         <div class="flex_Row1">
             
              <div class="men category">
-                <h1>Men</h1>
+                <!-- <p>Men's</p> -->
+                <a href="#" class="categoryLinks">Men's</a>
              </div>
 
             <div class="trends category">
-                <h1>Trends</h1>
+                <!-- <p>Trends</p> -->
+                <a href="#" class="categoryLinks">Trends</a>
             </div>
              
             <div class="glasses category">
-                 <h1>Glasses</h1>   
+                 <!-- <p>Glasses</p>   -->
+                 <a href="#" class="categoryLinks">Glasses</a> 
             </div> 
         </div>
 
         <div class="flex_Row2">
       
             <div class="sale category">
-               <h1>Sale</h1>
+               <!-- <p>Sale</p> -->
+               <a href="#" class="categoryLinks">Sale</a>
             </div>
 
             <div class="bags category">
-                 <h1>Bags</h1>
+                 <!-- <p>Bags</p> -->
+                 <a href="#" class="categoryLinks">Bags</a>
             </div>
         
             <div class="womens category">
-                 <h1>Women's</h1>
+                 <!-- <p>Women's</p> -->
+                 <a href="#" class="categoryLinks">Women's</a>
             </div> 
         
         </div>
 
     </section>
 
-    <section class="items">
-        <h1><span>Most-Loved</span> Products</h1>
-        <ul>
-            <li>
+    <section class="items" >
+        <h1 class="_ProductsHeader"><span class="headerTextItalics">Most-Loved</span> <span class="headerTextBold">Products</span></h1>
+        <div class="main-carousel" id="#carousel">
+            <div class="carousel-cell">
                 <img src="images/checked-stretch-dress.jpg" alt="Dress_img">
                 <p>Dresses</p>
                 <h1>Checked Stretch Dress</h1>
                 <p>$129</p>
-            </li>
-            <li>
+            </div>
+            <div class="carousel-cell">
                 <img src="images/blue-hipster-backpack.jpg" alt="Bagback_img">
                 <p>Bags</p>
                 <h1>Blue Hipster Backpack</h1>
                 <p>$69</p>
-            </li>
-            <li>
+            </div>
+            <div class="carousel-cell">
                 <img src="images/demin-overall-shorts.jpg" alt="shorts_img">
                 <p>Denim</p>
                 <h1>Denim Oveeall Shorts</h1>
                 <p>$89</p>
-            </li>
-            <li>
+            </div>
+            <div class="carousel-cell">
                 <img src="images/pink-dotted-dress.jpg" alt="dotted_dress">
                 <p>Dresses</p>
                 <h1>Pink Dotted Dress</h1>
                 <p>$99</p>
-            </li>
-        </ul>
-
+            </div>
+        
+        </div>
     </section>
         
 
     <section class="subscribe">
 
         <h1><span>Sign-up for</span> Updates</h1>
-        <p>Stayes updated on our latest prodcut releases, be first to find out about upcoming sales, and get free style tips from our blog, Unsubscribe any time.</p>
+        <p>Stay updated on our latest prodcut releases, be first to find out about upcoming sales, and get free style tips from our blog, Unsubscribe any time.</p>
         <form>
             <input type="email" placeholder="Your Email">
             <button>Subscribe</button>
@@ -151,7 +160,8 @@
             <p class="copyright">
                 © 2016 Aloha Apparel Co.<br>
                 Powered by HTML  And CSS.<br><br>
-                604-604-6040.<span>info@alohaapparel.com</span>
+                604-604-6040.<span><a href="mailto:nfo@alohaapparel.com">info@alohaapparel.com</a> </span> 
+                
             </p>
             <p class="addressPara">
                 1490 W Broadway<br>
@@ -205,7 +215,8 @@
             </ul>
         </div>
     </footer>
-    <script src="JS/jquery-3.3.1.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/flickity.pkgd.min.js"></script>
     <script src="JS/aloha.js"></script>
 </body>
 </html>

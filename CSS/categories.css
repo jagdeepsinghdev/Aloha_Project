@@ -1,142 +1,30 @@
-/*
-.categories {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 2em;
-    grid-gap: .5em;
-   text-transform: uppercase;
-   font-weight: normal;
-   height: 611px;
-    font-size: 22px;
-}
-.flex_Row1 , {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
-.men , .trends , .glasses,.sale , .bags , .womens {
-    
-    display: grid;
-    align-items:center;
-    justify-content:center; 
-}
-
-
-.men {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/mens-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-   
-    
-}
-.trends {
-    flex-basis: calc(50% - 3px);
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/trends-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-   flex-shrink: 0;
-
-}
-.glasses {
-    flex-basis: calc(50% - 3px);
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/glasses-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-    flex-shrink: 0;
-   
-}
-.sale {
-    flex-basis: calc(50% - 3px);
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/sale-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-   
-}
-.bags {
-    flex-basis: calc(50% - 3px);
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/bags-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-   
-}
-.womens {
-    flex-basis: 100%;
-    
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/womens-category.jpg") ;
-    background-size: contain ,cover;
-    background-position: center;
-  
-} */
-
-/* @media screen and (max-width:640px) {
-   
-    .categories {
-        height: 686px;
-        font-size: 22px;
-    }
-    .flex_Row1 , .flex_Row2 {
-        
-        flex-direction: row;
-         flex-wrap: wrap;
-       justify-content: space-between;
-    }
-    .men {
-       flex-basis: 100%;
-     
-       border-bottom: 3px solid white;
-    border-right: none;
-    }
-    .trends {
-        flex-basis: 49.5%;
-        border-left: none;
-        border-top: 3px solid white;
-        border-right: none;
-        
-    }
-    .glasses {
-        flex-basis: 49.5%; 
-        border-left: none;
-        border-top: 3px solid white;
-    }
-    .sale {
-        flex-basis: 49.5%; 
-        border-left: none;
-        border-right: none;
-        border-bottom: 3px solid white;
-    }
-    .bags {
-        flex-basis: 49.5%; 
-        border-right: none;
-        border-left: none;
-        border-bottom: 3px solid white;
-    }
-    .womens {
-        flex-basis: 100%;
-      
-        border-top: 3px solid white;
-        
-        border-left: none;
-       
-        
-    }
-}
-*/
 .categories {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 300px);
-    grid-gap: 5px;
+    grid-template-rows: repeat(2, 360px);
+    grid-gap: 7px;
+  
+    
+    
     
 }
-
+.categoryLinks {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+.categoryLinks:hover {
+    color:lightgray; 
+}
 
 .flex_Row1, .flex_Row2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-gap: 7px;
     
     
 }
@@ -203,10 +91,14 @@
 @media screen and (min-width:600px) {
     .categories {
     
-        grid-template-rows: repeat(2, 250px);
-        font-size: 34px; 
+        grid-template-rows: repeat(2, 220px);
+        
         
      }
+     .categories p {
+        font-size: 27px;
+    }
+    
     .flex_Row1 ,.flex_Row2 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -255,10 +147,13 @@
 @media screen and (min-width:1240px) {
     .categories {
     
-        grid-template-rows: repeat(2, 327px);
+        grid-template-rows: repeat(2, 300px);
        
     }
-   
+    .categories p {
+        font-size: 30px;
+    }
+    
     
     
 }

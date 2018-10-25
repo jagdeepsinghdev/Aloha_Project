@@ -11,6 +11,7 @@
     background-position:bottom 8% center;
    
     text-align: center;
+    border-bottom: 7px solid white;
 
 }
 .subscribe h1{
@@ -36,7 +37,7 @@
     
     position: absolute;
     font-family: 'Raleway';
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin-left: -48%;
 }
 form {
@@ -62,19 +63,19 @@ form input[type="email"] {
     font-size: 17px;
     
 }
-button{
-    height: 36px;
-    background-color: brown;
-    
+button {
+    height: 32px;
+    background-color: #e2574c;
     color: white;
     border-radius: 18px;
     left: 50%;
     position: absolute;
-    bottom: 40px;
+    bottom: 42px;
     border: none;
-    width: 99px;
-    margin-left: 48px;
+    width: 105px;
+    margin-left: 40px;
     font-size: 14px;
+    font-family: 'Raleway';
 }
 
 
@@ -82,42 +83,30 @@ button{
 
 /* ------------------------------Mobile */
 
-/* @media screen and (max-width:600px) {
-    
-.subscribe h1 {
-font-size: 32px;
-font-weight: 900;
-width: 97%;
-/* text-align: center; */
-/* left: 50%; */
-/* margin-top: 70px;
-margin-left: -48%; */
-/* position: absolute; */
-/* } 
+ @media screen and (min-width:600px) {
 
-.subscribe p {
+    .subscribe p {
+        width: 470px;
+        left: 50%;
+        margin-top: 125px;
+        line-height: 20px;
+        position: absolute;
+        font-family: 'Raleway';
+        
+        margin-left: -235px;
+    }
+    form input {
+        
+        width: 350px;
+        margin-left: -175px;
+    }
+    button {
+        
+        margin-left: 84px;
+       
+    }
     
-    
-    width: 96%;
-    left: 50%;
-    margin-top: 137px;
-    margin-left: -48%;
-   
-    line-height: 20px;
 }
-form input {
-    width: 280px;
-    margin-left: -150px;
-}
-button {
-    width: 99px;
-
-    margin-left: 48px;
-    
-    font-size: 14px;
-}
-}
-*/
 @media screen and (min-width:1240px) {
 .subscribe {
     height: 350px;
@@ -127,9 +116,9 @@ button {
 }
 .subscribe p {
 
-    width: 546px;
+    width: 600px;
     line-height: 28px;
-    margin-left: -273px;
+    margin-left: -300px;
     font-weight: 500;
     margin-top: 147px;
 }

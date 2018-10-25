@@ -1,48 +1,78 @@
 /* * ----------------------------------------carousel------------------------------------------ */ */
 .items {
-    position: relative;
-   display: inline-block;
-    height: 400px;
+    height: 500px;
     width: 100%;
-    color: black;
-   
 }
-.items h1 {
-    
-
-        line-height: 40px;
-        color: black;
-        font-size: 30px;
-        font-weight: bolder;
-        text-align: center;
-    
-    
+._ProductsHeader {
+    font-size: 26px;
+    color:#2d2d2d;
+    text-align: center;
+    padding-top: 46px;
+}
+.headerTextItalics {
+font-style: italic;
+}
+.headerTextBold {
+    font-weight: 900;
 }
 .items p {
-    color: gray;
+    color: #969696;
+
+text-transform: uppercase;
     
 }
 
-.items span {
+.titleHeader span {
     font-style: italic;
 }
-.items ul {
+.carousel-cell {
+    position: relative;
+    top: 47px;
     text-align: center;
-}
-.items li {
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-    height: 250px;
-    
-    
+    width: 100%; /* full width */
+    height: 442px; /* height of carousel */
+     margin-right: 10px;
 }
 
-.items li img {
-    height: 200px;
-    width: 200px;
+
+.carousel-cell  img {
+    height: 250px;
+    width: 250px;
 }
-.items li h1 {
-    color: red ;
-    font-size: 16px;
+.carousel-cell h1 {
+    color: #e2574c ;
+    margin: 20px;
+    font-size: 19px;
+}
+
+.flickity-page-dots {
+
+    
+    bottom: 9px;
+
+}
+.flickity-prev-next-button {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+@media screen and (min-width:600px) {
+    .carousel-cell { 
+        width: 50%; 
+    }
+    .carousel-cell h1 {
+        font-size: 22px;
+        /* width problem */
+    }
+    ._ProductsHeader {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:1240px) {
+    .carousel-cell { 
+        width: 25%; 
+    }
+    ._ProductsHeader {
+        font-size: 33px;
+    }
 }

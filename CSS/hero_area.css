@@ -20,9 +20,9 @@
     position: absolute;
     height: 40px;
     width: 174px;
-    top: 34%;
+    top: 30%;
     left: 50%;
-    margin-top: -20px;
+   
     margin-left: -87px;
     line-height: 40px;
     font-size: 17px;
@@ -32,9 +32,9 @@
 .Spring_summer_head {
     position: absolute;
     left: 50%;
-    top: 8%;
-    font-size: 26px;
-    margin-top: 124px;
+    top: 42%;
+    font-size: 30px;
+    
     width: 199px;
     text-align: center;
     margin-left: -104px;
@@ -42,15 +42,16 @@
 
 
 
-@media screen and (min-width:600px) and (max-width:1240px) {
+@media screen and (min-width:600px)  {
 
- .banner {
-    background-repeat: no-repeat ,no-repeat ,repeat;
-    background-size: contain ,contain ,contain;
- }
+    .banner {
+        background-repeat: repeat ,no-repeat ,no-repeat;
+        background-size: contain ,contain ,cover;
+        height: 420px;
+    }
 .new_collection_text {
     
-    top: 35%;
+    top: 30%;
 }
 
 .Spring_summer_head {
@@ -64,41 +65,27 @@
 
 } 
 }
-/* ------------------------------Mobile */
-
-/* @media screen and (max-width:640px) {
+@media screen and (min-width:800px) {
     .banner {
-        height: 370px;
-        background-repeat: no-repeat ,no-repeat ,no-repeat;
-        background-size: contain ,contain ,cover;
-        background-size: contain ,contain ,cover;
-
-        background-position-y: 0px ,37px,center;
+        background-repeat: repeat ,no-repeat ,repeat;
+        background-size: contain ,contain ,contain;
         
-        background-position-x: 0px ,center,center;
-    }
-    .new_collection_text{
-        top: 35%;
-        font-size: 16px;
-      
-    }
-    .Spring_summer_head {
-       font-size: 25px;
-       top: -10px;
-       
     }
 }
-*/
+/* ------------------------------Mobile */
+
+
 @media screen and (min-width:1240px)  {
    
     .banner {
         background-repeat: no-repeat ,no-repeat ,repeat;
         background-size: contain ,contain ,contain;
+        height: 450px;
   
     }
     .new_collection_text {
 
-        top: 36%;
+        top: 31%;
         font-size: 16px;
         width: 250px;
         margin-left: -122px;
@@ -106,11 +93,11 @@
     }
     .Spring_summer_head {
 
-        font-size: 32px;
+        font-size: 38px;
         font-weight: normal;
         width: 496px;
         margin-left: -248px;
-        margin-top: 131px;
+        
     
     }
 } 
