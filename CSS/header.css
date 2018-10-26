@@ -1,5 +1,5 @@
 /* ---------------------------NAVIGATION---------------------------------- */
-header {
+/* header {
    
     display: flex;
     height: 110px;
@@ -7,7 +7,19 @@ header {
      flex-wrap: wrap;
      justify-content: space-between;
 
- } 
+ }  */
+ header {
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    top: 0px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+
+}
  /* LOGO */
 .logo {
     
@@ -69,7 +81,7 @@ margin: 0px 10px;
 /* CART */
 .cart {
     display: flex;
-   
+   position: relative;
     height: 70px;
     flex-basis: 11%;
    
@@ -78,6 +90,18 @@ margin: 0px 10px;
     align-items: center;
  padding-top: 0px;
     
+}
+.counter {
+    height: 30px;
+    width: 30px;
+    background-color: #e2574c;
+    position: absolute;
+    border-radius: 15px;
+    right: 0px;
+    top: 0px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
 }
 .cart a img {
     display: flex;
@@ -102,9 +126,11 @@ margin: 0px 10px;
         flex-basis: 58%;
         height: 70px;
         line-height: 70px;
+        
     }
     .nav li a {
         padding: 0px 10px;
+        font-size: 16px;
     }
     .cart {
 

@@ -25,27 +25,28 @@
 </head>
 <!-- -----------------------------------Body------------------------------------------- -->
 <body> 
-    <header>
+    <header id="_header">
             <div class="logo">
                     <img src="images/aloha-logo.svg" alt="aloha logo">
             </div>
             
             <div class="nav">
                 <ul>
-                     <li><a href="About">ABOUT</a></li>
-                     <li><a href="Shop">SHOP</a></li>
-                     <li><a href="Feature">FEATURED</a></li>
-                     <li><a href="Update">UPDATE</a></li>
+                     <li><a href="#_aboutAloha" id="ABOUT">ABOUT</a></li>
+                     <li><a href="#_shop" id="Shop">SHOP</a></li>
+                     <li><a href="#feature_items" id="FEATURED">FEATURED</a></li>
+                     <li><a href="#subscribe_update" id="UPDATE">UPDATE</a></li>
                 </ul>
             </div> 
             
             <div class="cart">
                     <a href="https://www.google.com/"><img src="images/cart-icon.svg" alt="cart_Logo"></a>
+                    <div class="counter" id="_counter"></div>
             </div>
 
     </header>
     
-    <section class="banner">
+    <section class="banner" id="_banner">
 
             <div class="new_collection_text">
                 <h3> New Collection</h3>
@@ -57,7 +58,7 @@
 
     </section>
 
-    <section class="brandinfo">
+    <section class="brandinfo" id="_aboutAloha">
 
         <!-- styling for this header is done in Items Section -->
         <div class="brandinfotext1">
@@ -70,7 +71,7 @@
        
     </section>
 
-    <section class="categories">
+    <section class="categories" id="_shop">
 
         <div class="flex_Row1">
             
@@ -111,7 +112,7 @@
 
     </section>
 
-    <section class="items" >
+    <section class="items" id="feature_items">
         <h1 class="_ProductsHeader"><span class="headerTextItalics">Most-Loved</span> <span class="headerTextBold">Products</span></h1>
         <div class="main-carousel" id="#carousel">
             <div class="carousel-cell">
@@ -119,37 +120,41 @@
                 <p>Dresses</p>
                 <h1>Checked Stretch Dress</h1>
                 <p>$129</p>
+                <button class="cartButton">Add to Cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="images/blue-hipster-backpack.jpg" alt="Bagback_img">
                 <p>Bags</p>
                 <h1>Blue Hipster Backpack</h1>
                 <p>$69</p>
+                <button class="cartButton">Add to Cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="images/demin-overall-shorts.jpg" alt="shorts_img">
                 <p>Denim</p>
                 <h1>Denim Oveeall Shorts</h1>
                 <p>$89</p>
+                <button class="cartButton">Add to Cart</button>
             </div>
             <div class="carousel-cell">
                 <img src="images/pink-dotted-dress.jpg" alt="dotted_dress">
                 <p>Dresses</p>
                 <h1>Pink Dotted Dress</h1>
                 <p>$99</p>
+                <button class="cartButton">Add to Cart</button>
             </div>
         
         </div>
     </section>
         
 
-    <section class="subscribe">
+    <section class="subscribe" id="subscribe_update">
 
         <h1><span>Sign-up for</span> Updates</h1>
         <p>Stay updated on our latest prodcut releases, be first to find out about upcoming sales, and get free style tips from our blog, Unsubscribe any time.</p>
         <form>
-            <input type="email" placeholder="Your Email">
-            <button>Subscribe</button>
+            <input type="emailTextField" placeholder="Your Email" id="emailTextField">
+            <input type="button" class="subscribeButton" id="subscribeButton" value="Subscribe">
         </form>
 
     </section>
@@ -217,6 +222,10 @@
     </footer>
     <script src="JS/jquery-3.3.1.min.js"></script>
     <script src="JS/flickity.pkgd.min.js"></script>
+    <!-- <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script> --> -->
     <script src="JS/aloha.js"></script>
 </body>
 </html>

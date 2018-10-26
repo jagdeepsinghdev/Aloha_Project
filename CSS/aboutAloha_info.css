@@ -13,7 +13,7 @@
 .brandinfotext1 h1 {
     position: absolute;
     width: 321px;
-   font-size: 26px;
+   font-size: 2rem;
     left: 50%;
     margin-top: 40px;
     margin-left: -160px;
@@ -36,23 +36,26 @@
 }
 /* ------------------------------Mobile */
 
-@media screen and (min-width:1240px) {
-    
-    
-    .brandinfoPara p {
-        width: 550px;
-        margin-left: -275px;
-    }
-}
-
-@media screen and (min-width:600px) and (max-width:1240px) {
-    .brandinfotext1 h1{
-        width: 300px;
-        font-size: 30px;
-        text-align: center;
+@media screen and (min-width:600px)  {
+    .brandinfotext1 h1 {
+        font-size: 2.5rem;
+        width: 450px;
+        margin-left: -225px;
     }
     .brandinfoPara p {
         width: 464px;
         margin-left: -232px;
     }
 } 
+
+@media screen and (min-width:1240px) {
+    
+   
+    .brandinfoPara p {
+
+        width: 518px;
+        margin-left: -259px;
+    
+    }
+}
+

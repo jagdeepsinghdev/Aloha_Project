@@ -47,33 +47,31 @@ form {
    
 
 }
- form input {
+form input {
     margin-top: 222px;
     border: none;
-    height: 40px;
-    border-radius: 20px;
+    height: 44px;
+    border-radius: 22px;
     left: 50%;
     position: absolute;
-    width: 280px;
+    width: 300px;
     margin-left: -150px;
-    
+    font-size: 14px;
+    text-indent: 10px;
 }
 form input[type="email"] {
     padding-left: 20px;
     font-size: 17px;
     
 }
-button {
-    height: 32px;
+.subscribeButton {
+    height: 38px;
     background-color: #e2574c;
     color: white;
-    border-radius: 18px;
-    left: 50%;
-    position: absolute;
-    bottom: 42px;
+    bottom: 37px;
     border: none;
     width: 105px;
-    margin-left: 40px;
+    margin-left: 41px;
     font-size: 14px;
     font-family: 'Raleway';
 }
@@ -100,11 +98,10 @@ button {
         width: 350px;
         margin-left: -175px;
     }
-    button {
-        
-        margin-left: 84px;
-       
+    .subscribeButton {
+        margin-left: 66px;
     }
+
     
 }
 @media screen and (min-width:1240px) {
@@ -127,11 +124,8 @@ form input {
     margin-left: -160px;
     margin-top: 272px;
 }
-button {
-    width: 110px;
-
-    margin-left: 67px;
-    
-    font-size: 16px;
+.subscribeButton {
+    margin-left: 51px;
 }
-} 
+}
+ 

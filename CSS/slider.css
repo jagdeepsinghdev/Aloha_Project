@@ -44,7 +44,10 @@ text-transform: uppercase;
     margin: 20px;
     font-size: 19px;
 }
-
+.cartButton {
+    
+    display: none;
+}
 .flickity-page-dots {
 
     
@@ -59,6 +62,7 @@ text-transform: uppercase;
 @media screen and (min-width:600px) {
     .carousel-cell { 
         width: 50%; 
+        
     }
     .carousel-cell h1 {
         font-size: 22px;
@@ -67,12 +71,36 @@ text-transform: uppercase;
     ._ProductsHeader {
         font-size: 30px;
     }
+    .cartButton {
+        display: none;
+    }
+   
 }
 @media screen and (min-width:1240px) {
     .carousel-cell { 
         width: 25%; 
+        height: 550px;
     }
     ._ProductsHeader {
         font-size: 33px;
     }
+    .cartButton {
+
+        display: block;
+        left: 50%;
+        position: absolute;
+        margin-left: -61px;
+        background-color: #2d2d2d;
+        width: 100px;
+        color: white;
+        font-family: 'Raleway';
+        border-radius: 20px;
+        height: 30px;
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+        bottom: 24%;
+    
+    }
+    
 }
