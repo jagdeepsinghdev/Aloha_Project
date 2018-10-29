@@ -1,182 +1,112 @@
 /* ------------------------------------------FOOTER---------------------------------------- */
 
-
 footer {
-    display: flex; 
-   
-    height: 250px; 
-    justify-content:space-between;
-    background: #242424;
-    flex-flow:wrap;
-    text-align: center;
-    align-items: center;
-    height: 250px;
-    width: 100%;
-    font-weight: 600;
-  
-}
+  display: flex;
 
+  height: 270px;
+  justify-content: space-between;
+  background: #242424;
+  flex-flow: wrap;
+  text-align: center;
+  align-items: center;
+
+  width: 100%;
+}
+/* -------------------address */
 .address {
-   
-    display: flex;
-    flex-direction: column;
-   
-    background-color: transparent;
-    position:relative;
-
-    text-align: center;
-    font-size: 14px;
-    flex-basis: 100%;
-
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  flex-basis: 100%;
 }
-.copyright , .addressPara {
-    padding-left: 0px;
+.copyright,
+.addressPara {
+  padding-left: 0px;
 }
 .copyright {
-    padding-top: 20px;
-    position: absoulte;
-    display: block;
+  padding-top: 20px;
+  position: absoulte;
+  display: block;
 }
 .copyright a {
-    color: white;  
+  color: white;
 }
-.addressPara  {
-   color: gray; 
-   padding-top: 20px;
- 
+.addressPara {
+  color: #969696;
+  padding-top: 20px;
 }
 
+
+/* ------___--------------social_links */
 .social_links {
-   
-    background-color: transparent;
-    
-    font-size: 14px;
-
-    display: flex;
-    flex-flow: row;
-    flex-basis: 100%;
-    height: 60px;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-  
+  background-color: transparent;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row;
+  flex-basis: 100%;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
 }
-
-.social_links  ul {
-   
-    list-style: none;
-    display: flex;
-
+.social_links ul {
+  list-style: none;
+  display: flex;
 }
 .social_links li a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-   
-   color: white;
-   
-   padding: 0px 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0px 10px;
 }
 .social_links li a:hover {
-    color:lightgrey;
+  color: lightgrey;
 }
 .social_links li a {
-    display: flex;
-    justify-content: start;
+  display: flex;
+  justify-content: start;
 }
 .social_icons {
-    flex: 0 0 28px;
-    
-
+  flex: 0 0 28px;
 }
 .social_text {
-    
-    flex: 0 0 30px;
-    font-size: 0px;
+  flex: 0 0 30px;
+  font-size: 0px;
 }
 
-/* ------------------------------Mobile */
-/* 
-@media screen and (max-width:640px) {
-    footer { 
+/* ------------------------------media_queries */
 
-        flex-flow:wrap;
-        
-        text-align: center;
-        align-items: center;
-        height: 250px;
-        width: 100%;
-     
-    }
-   .address {
-    text-align: center;
-    font-size: 14px;
-    flex-basis: 100%;
-   }
-   .copyright , .addressPara {
-       padding-left: 0px;
-   }
-   .copyright {
-       padding-top: 20px;
-   }
-  .social_links {
-    display: flex;
-    flex-flow: row;
-    flex-basis: 100%;
-    height: 60px;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
+@media screen and (min-width: 600px) {
+  .address {
+    flex-basis: 25%;
+    text-align: left;
+    margin-left: 40px;
   }
-  .social_links ul  {
-    display: flex;
-    
+  .copyright {
+    padding-top: 0px;
+  }
+  .social_links {
+    flex-basis: 25%;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .social_links ul {
+    flex-direction: column;
+    list-style: none;
+  }
+  .social_links ul li a {
+    padding: 5px;
+    font-family: "Raleway";
+  }
+  .social_links li a:hover {
+    color: lightgrey;
+  }
+
+  .social_text {
+    font-size: 16px;
+  }
 }
-.social_text {
-    font-size: 0px;
-}
-.social_links ul a {
-    padding: 0px 10px;
-}
-}
-*/
-@media screen and (min-width:600px) {
-    
-    .address {
-        
-        flex-basis: 25%;
-        text-align: left;
-        margin-left: 40px;
-    }
-    .copyright {
-        padding-top: 0px;
-    }
-    .social_links {
-        
-        flex-basis: 25%;
-        font-size: 16px;
-        align-items: center;
-       
-       
-    }
-    
-    .social_links  ul {
-        flex-direction: column;
-        list-style: none;
-    
-    }
-    .social_links ul li a {
-       
-        padding: 5px;
-        font-family: 'Raleway';
-    }
-    .social_links li a:hover {
-        color:lightgrey;
-    }
-   
-    
-    .social_text {
-        font-size: 16px;
-        
-    }
-} 

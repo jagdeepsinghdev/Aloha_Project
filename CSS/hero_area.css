@@ -1,104 +1,92 @@
 /* -------------------------------------HERO_AREA------------------------------------------ */
 .banner {
-    position: relative;
-    margin-top: 110px;
-    width: 100%;
-    background: linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)) ,url("../images/banner-girl.png"),url("../images/flower-bkgd.jpg");
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
-    height: 370px;
-    background-repeat: no-repeat ,no-repeat ,no-repeat;
-    background-size: contain ,contain ,cover;
-    
-
-    background-position-y: 0px ,37px,center;
-        
-    background-position-x: 0px ,center,center;
+  position: relative;
+  margin-top: 110px;
+  width: 100%;
+  background: linear-gradient(rgba(48, 45, 45, 0.3), rgba(53, 47, 47, 0.3)),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  height: 450px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, cover;
+  background-position-y: 0px, 37px, center;
+  background-position-x: 0px, center, center;
+  color: white;
 }
+
+/* -----header_1 */
 .new_collection_text {
-    position: absolute;
-    height: 40px;
-    width: 174px;
-    top: 30%;
-    left: 50%;
-   
-    margin-left: -87px;
-    line-height: 40px;
-    font-size: 17px;
-    text-transform: uppercase;
+  position: absolute;
+  height: 40px;
+  width: 174px;
+  top: 30%;
+  left: 50%;
+  margin-left: -87px;
+  line-height: 40px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: whhite;
 }
-
+/* ------header_2 */
 .Spring_summer_head {
-    position: absolute;
-    left: 50%;
-    top: 42%;
-    font-size: 30px;
-    
-    width: 199px;
-    text-align: center;
-    margin-left: -104px;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  font-size: 30px;
+  width: 199px;
+  text-align: center;
+  margin-left: -104px;
 }
 
-
-
-@media screen and (min-width:600px)  {
-
-    .banner {
-        background-repeat: repeat ,no-repeat ,no-repeat;
-        background-size: contain ,contain ,cover;
-        height: 420px;
-        margin-top: 70px;
-    }
-.new_collection_text {
-    
+/* --------------------------------Media_quries------------------------------------------------ */
+@media screen and (min-width: 600px) {
+  .banner {
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: contain, contain, cover;
+    height: 500px;
+    margin-top: 70px;
+  }
+  .new_collection_text {
     top: 30%;
-}
+  }
 
-.Spring_summer_head {
+  .Spring_summer_head {
     position: absolute;
     left: 50%;
-    font-size: 26px;
     /* margin-top: 170px; */
     width: 286px;
     text-align: center;
     margin-left: -143px;
-
-} 
+  }
 }
-@media screen and (min-width:800px) {
-    .banner {
-        background-repeat: repeat ,no-repeat ,repeat;
-        background-size: contain ,contain ,contain;
-        
-    }
+
+/* ------------------------------------media_queries */
+@media screen and (min-width: 800px) {
+  .banner {
+    background-repeat: repeat, no-repeat, repeat;
+    background-size: contain, contain, contain;
+  }
 }
-/* ------------------------------Mobile */
+/* --------------------------------------Desktop */
 
-
-@media screen and (min-width:1240px)  {
-   
-    .banner {
-        background-repeat: no-repeat ,no-repeat ,repeat;
-        background-size: contain ,contain ,contain;
-        height: 450px;
-  
-    }
-    .new_collection_text {
-
-        top: 31%;
-        font-size: 16px;
-        width: 250px;
-        margin-left: -122px;
-    
-    }
-    .Spring_summer_head {
-
-        font-size: 38px;
-        font-weight: normal;
-        width: 496px;
-        margin-left: -248px;
-        
-    
-    }
-} 
+@media screen and (min-width: 1240px) {
+  .banner {
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: contain, contain, contain;
+    height: 450px;
+  }
+  .new_collection_text {
+    top: 31%;
+    font-size: 16px;
+    width: 250px;
+    margin-left: -122px;
+  }
+  .Spring_summer_head {
+    font-size: 45px;
+    font-weight: normal;
+    width: 496px;
+    margin-left: -248px;
+  }
+}

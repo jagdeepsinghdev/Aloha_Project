@@ -1,131 +1,115 @@
 /* ----------------------------------------SUBSCRIBE_SECTION--------------------------------- */
 
-
 .subscribe {
-    display: block;
-    position: relative;
-    max-width:100%;
-    height: 300px;
-    background:linear-gradient(rgba(48, 45, 45, 0.3),rgba(53, 47, 47, 0.3)),url("../images/wave-bkgd.jpg") ;
-    background-repeat:no-repeat;
-    background-position:bottom 8% center;
-   
-    text-align: center;
-    border-bottom: 7px solid white;
-
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  background: linear-gradient(rgba(48, 45, 45, 0.3), rgba(53, 47, 47, 0.3)),
+    url("../images/wave-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 8% center;
+  text-align: center;
+  border-bottom: 7px solid white;
 }
-.subscribe h1{
-   
-    font-size: 32px;
-    font-weight: 900;
-    width: 97%;
-    left: 50%;
-    margin-left: -48%; 
-    margin-top: 70px;
-    position: absolute;
-
+.subscribe h1 {
+  font-size: 32px;
+  font-weight: 900;
+  width: 97%;
+  left: 50%;
+  margin-left: -48%;
+  margin-top: 70px;
+  position: absolute;
 }
 .subscribe span {
-    font-style: italic;
+  font-style: italic;
 }
 .subscribe p {
-
-    width: 96%;
-    left: 50%;
-    margin-top: 133px;
-    line-height: 20px;
-    
-    position: absolute;
-    font-family: 'Raleway';
-    /* font-weight: lighter; */
-    margin-left: -48%;
+  width: 96%;
+  left: 50%;
+  margin-top: 133px;
+  line-height: 20px;
+  position: absolute;
+  font-family: "Raleway";
+  /* font-weight: lighter; */
+  margin-left: -48%;
 }
-form {
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-   
 
+/* --------Form */
+form {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
 }
 form input {
-    margin-top: 222px;
-    border: none;
-    height: 44px;
-    border-radius: 22px;
-    left: 50%;
-    position: absolute;
-    width: 300px;
-    margin-left: -150px;
-    font-size: 14px;
-    text-indent: 10px;
+  margin-top: 222px;
+  border: none;
+  height: 44px;
+  border-radius: 22px;
+  left: 50%;
+  position: absolute;
+  width: 300px;
+  margin-left: -150px;
+  font-size: 14px;
+  text-indent: 10px;
 }
 form input[type="email"] {
-    padding-left: 20px;
-    font-size: 17px;
-    
+  padding-left: 20px;
+  font-size: 17px;
 }
 .subscribeButton {
-    height: 38px;
-    background-color: #e2574c;
-    color: white;
-    bottom: 37px;
-    border: none;
-    width: 105px;
-    margin-left: 41px;
-    font-size: 14px;
-    font-family: 'Raleway';
+  height: 38px;
+  background-color: #e2574c;
+  color: white;
+  bottom: 37px;
+  border: none;
+  width: 105px;
+  margin-left: 41px;
+  font-size: 14px;
+  font-family: "Raleway";
 }
-
-
-
 
 /* ------------------------------Mobile */
 
- @media screen and (min-width:600px) {
-
-    .subscribe p {
-        width: 470px;
-        left: 50%;
-        margin-top: 125px;
-        line-height: 20px;
-        position: absolute;
-        font-family: 'Raleway';
-        
-        margin-left: -235px;
-    }
-    form input {
-        
-        width: 350px;
-        margin-left: -175px;
-    }
-    .subscribeButton {
-        margin-left: 66px;
-    }
-
-    
+@media screen and (min-width: 600px) {
+  .subscribe p {
+    width: 470px;
+    left: 50%;
+    margin-top: 125px;
+    line-height: 20px;
+    position: absolute;
+    font-family: "Raleway";
+    margin-left: -235px;
+  }
+  form input {
+    width: 350px;
+    margin-left: -175px;
+  }
+  .subscribeButton {
+    margin-left: 66px;
+  }
 }
-@media screen and (min-width:1240px) {
-.subscribe {
+/* ------------------------------Desktop */
+@media screen and (min-width: 1240px) {
+  .subscribe {
     height: 350px;
-}
-.subscribe h1 {
+  }
+  .subscribe h1 {
     margin-top: 77px;
-}
-.subscribe p {
-
+  }
+  .subscribe p {
     width: 600px;
     line-height: 28px;
     margin-left: -300px;
     font-weight: 500;
     margin-top: 147px;
-}
-form input {
+  }
+  form input {
     width: 320px;
     margin-left: -160px;
     margin-top: 272px;
-}
-.subscribeButton {
+  }
+  .subscribeButton {
     margin-left: 51px;
+  }
 }
-}
- 

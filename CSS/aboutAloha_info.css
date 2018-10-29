@@ -1,61 +1,51 @@
 /* --------------------------------------BRAND_INFO------------------------------------------ */
 
-
-
 .brandinfo {
-   
-    position: relative;
-    height: 220px;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  height: 220px;
+  width: 100%;
+  text-align: center;
 }
 
 .brandinfotext1 h1 {
-    position: absolute;
-    width: 321px;
-   font-size: 2rem;
-    left: 50%;
-    margin-top: 40px;
-    margin-left: -160px;
-    color: #2d2d2d;
-    display: block;
-   
+  position: absolute;
+  width: 321px;
+  font-size: 2rem;
+  left: 50%;
+  margin-top: 40px;
+  margin-left: -160px;
+  color: #2d2d2d;
+  display: block;
 }
 
-
 .brandinfoPara p {
-    position: absolute;
-    line-height: 25px;
-   
-    width: 92%;
-    margin-top: 100px;
-    left: 50%;
-    color: #2d2d2d;
-    margin-left: -46%;
-    font-weight: 300;
+  position: absolute;
+  line-height: 25px;
+  width: 92%;
+  margin-top: 100px;
+  left: 50%;
+  color: #2d2d2d;
+  margin-left: -46%;
+  font-weight: 300;
 }
 /* ------------------------------Mobile */
 
-@media screen and (min-width:600px)  {
-    .brandinfotext1 h1 {
-        font-size: 2.5rem;
-        width: 450px;
-        margin-left: -225px;
-    }
-    .brandinfoPara p {
-        width: 464px;
-        margin-left: -232px;
-    }
-} 
-
-@media screen and (min-width:1240px) {
-    
-   
-    .brandinfoPara p {
-
-        width: 518px;
-        margin-left: -259px;
-    
-    }
+@media screen and (min-width: 600px) {
+  .brandinfotext1 h1 {
+    font-size: 2.5rem;
+    width: 450px;
+    margin-left: -225px;
+  }
+  .brandinfoPara p {
+    width: 464px;
+    margin-left: -232px;
+  }
 }
 
+/* ------------------------------Desktop */
+@media screen and (min-width: 1240px) {
+  .brandinfoPara p {
+    width: 518px;
+    margin-left: -259px;
+  }
+}
